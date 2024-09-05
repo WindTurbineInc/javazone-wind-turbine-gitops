@@ -1,0 +1,15 @@
+app:
+  name: javazone-wind-turbine-app
+  namespace: javazone
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/javazone-wind-turbine
+  org: WindTurbineInc
+  name: javazone-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: javazone/wind-turbine-app
+  tag: latest
